@@ -1,28 +1,26 @@
+// app/page.tsx
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-background p-4">
-      <Card className="max-w-md w-full text-center shadow-lg">
-        <CardHeader>
-          <CardTitle className="text-2xl font-semibold">User Synchronization Dashboard</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <p className="text-muted-foreground">
-            Manage and synchronize user data between Supabase and an external system.
-          </p>
-          <Link href="/sync-dashboard">
-            <Button
-              size="lg"
-              className="w-full"
-            >
-              Go to Sync Dashboard
-            </Button>
-          </Link>
-        </CardContent>
-      </Card>
+    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-slate-50 to-slate-200 text-center px-4">
+      <div className="max-w-lg">
+        <h1 className="text-4xl font-bold mb-4 text-slate-800">User Synchronization Dashboard</h1>
+        <p className="text-slate-600 mb-6">
+          A full-stack demo using <span className="font-semibold">Next.js App Router</span>,{' '}
+          <span className="font-semibold">Supabase</span>, and{' '}
+          <span className="font-semibold">shadcn/ui</span>.
+        </p>
+        <Link href="/sync-dashboard">
+          <Button
+            size="lg"
+            className="rounded-full bg-slate-900 hover:bg-slate-800 text-white shadow-md hover:shadow-lg transition-all"
+          >
+            Go to Dashboard
+          </Button>
+        </Link>
+      </div>
     </main>
   );
 }
