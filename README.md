@@ -199,7 +199,7 @@ SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 ### 5. Run the App
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Then visit:  
