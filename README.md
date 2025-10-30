@@ -135,7 +135,7 @@ lib/
 
 ---
 
-## AI Reflection (Optional)
+## AI Reflection
 
 AI tools were used to:
 
@@ -153,8 +153,8 @@ This allowed focus on architecture, Supabase integration, and UI experience.
 Ensure you have the following installed:
 
 - Node.js 18+
-- npm
-- Supabase account
+- pnpm
+- Supabase account (optional)
 - Git
 
 ---
@@ -162,8 +162,8 @@ Ensure you have the following installed:
 ### 1. Clone the Project
 
 ```bash
-git clone https://github.com/yourusername/user-sync-dashboard.git
-cd user-sync-dashboard
+git clone https://github.com/kharljhon14/synchronization-dashboard
+cd synchronization-dashboard
 ```
 
 ---
@@ -171,7 +171,7 @@ cd user-sync-dashboard
 ### 2. Install Dependencies
 
 ```bash
-npm install
+pnpm install
 ```
 
 ---
